@@ -12,6 +12,7 @@ const App = function () {
   const [error, setError] = React.useState(null)
 
   React.useEffect(() => {
+
     api.signInWithJWT()
       .then(resp => {
         if (!resp) return;
